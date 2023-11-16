@@ -9,18 +9,22 @@
          url('../fonts/Raleway-Italic.ttf') format('truetype');
 }
 
+/* Police des paragraphe et titres */
 p, li {
     font-family: 'Raleway', sans-serif;
 }
 
+/* Police des Titres */
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
 }
 
+/* Cas particulier du à la taille du  au fait  que j'ai demander aux autres H2 d'avoir un fond rouge */
 h2 {
     background-color: #dbc2a4;
 }
 
+/* Textes sur fond rouge */
 .profile-info__name,
 .profile-info__job,
 .contact-info__address,
@@ -32,6 +36,7 @@ h2 {
     color: white;
 }
 
+/* BLOC BODY  */
 body {
     display: flex;
     flex-direction: row;
@@ -43,6 +48,7 @@ body {
     margin: 0 auto;
 }
 
+/* BLOC  HEADER */
 .header-section {
     width: 100%;
     background-color: #782221;
@@ -55,10 +61,18 @@ body {
     justify-content: center;
 }
 
+/* MA PHOTO DE PROFIL */
+.profile-info__photo {
+    border-radius: 50%; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+}
+
+/* JOB EN RECHERCHE */
 .profile-info__job {
     background-color: #782221;
 }
 
+/* MA BARRES d'INFOS de CONTACTS */
 .contact-info {
     display: flex;
     justify-content: space-around;
@@ -73,6 +87,21 @@ body {
 
 .contact-info__phone {
     margin-left: 160px; 
+}
+
+/* Couleur par défaut des liens */
+.contact-info__address a,
+.contact-info__email a,
+.contact-info__phone a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Couleur des liens une fois visités */
+.contact-info__address a:visited,
+.contact-info__email a:visited,
+.contact-info__phone a:visited {
+    color: white;
 }
 
 .left-section  {
