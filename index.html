@@ -12,38 +12,39 @@
     <!-- En-tête du CV avec la photo, le nom et le poste recherché -->
     <header class="header-section">
         <div class="profile-info">
-            <img src="./assets/images/photo-profil.png" alt="Photo de profil">
-            <h1>Kevin Castagnos</h1>
-            <h2>Développeur Web Junior</h2>
+            <img src="./assets/images/photo-profil.png" alt="Photo de profil" class="profile-info__photo">
+            <h1 class="profile-info__name">KEVIN CASTAGNOS</h1>
+            <h2 class="profile-info__job">Développeur Web Junior</h2>
         </div>
         <!-- Informations de contact : adresse, email, téléphone -->
         <div class="contact-info">
-            <p class="address">12 Rue des Oliviers 53200 La Roche-Neuville</p>
-            <p class="email"><a href="mailto:devjr.dallas@gmail.com">devjr.dallas@gmail.com</a></p>
-            <p class="phone"><a href="tel:06060606">06060606</a></p>
+            <p class="contact-info__address">12 Rue des Oliviers <br>
+                                            53200 La Roche-Neuville</p>
+            <p class="contact-info__email"><a href="mailto:devjr.dallas@gmail.com">devjr.dallas@gmail.com</a></p>
+            <p class="contact-info__phone"><a href="tel:06060606">06060606</a></p>
         </div>
     </header>
 
     <!-- Bloc gauche du CV avec la présentation, les langues parlées, les centres d'intérêt -->
     <section class="left-section">
-        <h2>A propos</h2>
-        <p>
+        <h2 class="left-section__about">A propos</h2>
+        <p class="left-section__description">
             <!-- Texte de présentation à propos -->
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             At, et esse officia corrupti aspernatur nihil, distinctio
             excepturi harum explicabo accusantium, delectus laborum dicta
             ea assumenda ducimus dolores aliquam fuga eum?
         </p>
-        <h2>Langues parlées</h2>
-        <ul>
+        <h2 class="left-section__lang">Langues parlées</h2>
+        <ul class="left-section__language-list">
             <!-- Liste des langues parlées -->
             <li>Français - Langue maternelle</li>
             <li>Anglais -  Intermédiaire +</li>
             <li>Espagnol - Scolaire</li>
             <li>Mandarin - Débutant</li>
         </ul>
-        <h2>Centres d'Interêt</h2>
-        <ul>
+        <h2 class="left-section__interest">Centres d'Interêt</h2>
+        <ul class="left-section__interest-list">
             <!-- Liste des centres d'intérêt -->
             <li>La Pratique de la Musique & Arts divers</li>
             <li>Les Echecs & Jeux</li>
@@ -55,76 +56,80 @@
 
     <!-- Bloc droit du CV avec les expériences professionnelles, les diplômes, les compétences -->
     <section class="right-section">
-        <h2>Expériences professionnelles</h2>
-        <div class="job">
-            <h3>Poste 1 - Entreprise 1</h3>
-            <p>Du XXX au XXX</p>
-            <ul>
+        <h2 class="right-section__title">Expériences professionnelles</h2>
+        <div class="right-section__job">
+            <h3 class="job__name">Poste 1 - Entreprise 1</h3>
+            <p class="job__date">Du XXX au XXX</p>
+            <ul class="job__mission-list">
                 <!-- Liste des missions pour le poste 1 -->
-                <li>Mission 1</li>
-                <li>Mission 2</li>
-                <li>Mission 3</li>
+                <li class="job__mission-item">Mission 1</li>
+                <li class="job__mission-item">Mission 2</li>
+                <li class="job__mission-item">Mission 3</li>
             </ul>
         </div>
-        <article class="job">
-            <h3>Poste 2 - Entreprise 2</h3>
-            <p>Du XXX au XXX</p>
-            <ul>
+        <div class="right-section__job">
+            <h3 class="job__name">Poste 2 - Entreprise 2</h3>
+            <p class="job__date">Du XXX au XXX</p>
+            <ul class="job__mission-list">
                 <!-- Liste des missions pour le poste 2 -->
-                <li>Mission 1</li>
-                <li>Mission 2</li>
-                <li>Mission 3</li>
+                <li class="job__mission-item">Mission 1</li>
+                <li class="job__mission-item">Mission 2</li>
+                <li class="job__mission-item">Mission 3</li>
             </ul>
         </div>
-        <div class="job">
-            <h3>Poste 3 - Entreprise 3</h3>
-            <p>Du XXX au XXX</p>
-            <ul>
+        <div class="right-section__job">
+            <h3 class="job__name">Poste 3 - Entreprise 3</h3>
+            <p class="job__date">Du XXX au XXX</p>
+            <ul class="job__mission-list">
                 <!-- Liste des missions pour le poste 3 -->
-                <li>Mission 1</li>
-                <li>Mission 2</li>
-                <li>Mission 3</li>
+                <li class="job__mission-item">Mission 1</li>
+                <li class="job__mission-item">Mission 2</li>
+                <li class="job__mission-item">Mission 3</li>
             </ul>
         </div>
 
-        <h2>Diplômes/Formation</h2>
-        <div class="degree-info">
+        <h2 class="right-section__title">Diplômes/Formation</h2>
+        <div class="right-section__degree-info">
             <!-- Informations sur la formation 1 -->
-            <h3 class="degree-1">Diplôme/Formation n°1</h3>
-            <p>Du XXX au XXX</p>
-            <p>Nom Ecole</p>
+            <h3 class="degree__name">Diplôme/Formation n°1</h3>
+            <p class="degree__date">Du XXX au XXX</p>
+            <p class="degree__school">Nom Ecole</p>
         </div>
-        <div class="degree-info">
+        <div class="right-section__degree-info">
             <!-- Informations sur la formation 2 -->
-            <h3 class="degree-2">Diplôme/Formation n°2</h3>
-            <p>Du XXX au XXX</p>
-            <p>Nom Ecole</p>
+            <h3 class="degree__name">Diplôme/Formation n°2</h3>
+            <p class="degree__date">Du XXX au XXX</p>
+            <p class="degree__school">Nom Ecole</p>
         </div>
-        <div class="degree-info">
+        <div class="right-section__degree-info">
             <!-- Informations sur la formation 3 -->
-            <h3 class="degree-3">Diplôme/Formation n°3</h3>
-            <p>Du XXX au XXX</p>
-            <p>Nom Ecole</p>
+            <h3 class="degree__name">Diplôme/Formation n°3</h3>
+            <p class="degree__date">Du XXX au XXX</p>
+            <p class="degree__school">Nom Ecole</p>
         </div>
 
-        <h2>Compétences</h2>
-        <ul>
+        <h2 class="right-section__title">Compétences</h2>
+        <ul class="right-section__skills-list">
             <!-- Liste des compétences -->
-            <li>HTML 5</li>
-            <li>CSS 3</li>
-            <li>GitHub</li>
-            <li>...</li>
+            <li class="skill">HTML 5</li>
+            <li class="skill">CSS 3</li>
+            <li class="skill">GitHub</li>
+            <li class="skill">...</li>
         </ul>
     </section>
 
     <!-- Pied de page avec les liens vers les réseaux sociaux et la date de dernière mise à jour -->
     <footer class="footer-section">
-        <img src="#" alt="reseau-1">
-        <img src="#" alt="reseau-2">
-        <img src="#" alt="reseau-3">
+        <div class="my-media">
+            <img src="./assets/images/facebook.png" alt="page-facebook" class="social-icon-1">
+            <img src="./assets/images/instagram.png" alt="page-instagram" class="social-icon-2">
+            <img src="./assets/images/signe-github.png" alt="page-github" class="social-icon-3">
+        </div>
         <!-- Dernière mise à jour -->
-        <p>Dernière mise à jour le 14 Novembre 2023</p>
-        <a href="https://www.flaticon.com/fr/icones-gratuites/cv" title="cv icônes">Cv icônes créées par Freepik - Flaticon</a>
+        <div class="other">        
+            <p>Dernière mise à jour le 14 Novembre 2023</p>
+            <a href="https://www.flaticon.com/fr/icones-gratuites/cv" title="cv icônes">Cv icônes créées par Freepik - Flaticon</a>
+        </div>
     </footer>
 
 </body>
