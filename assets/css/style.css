@@ -19,7 +19,6 @@ h1, h2, h3 {
     font-family: 'Lato', sans-serif;
 }
 
-/* Cas particulier du à la taille du  au fait  que j'ai demander aux autres H2 d'avoir un fond rouge */
 h2 {
     background-color: #dbc2a4;
 }
@@ -32,7 +31,8 @@ h2 {
 .contact-info__phone,
 .left-section__description,
 .left-section__language-list,
-.left-section__interest-list {
+.left-section__interest-list,
+.last-update {
     color: white;
 }
 
@@ -41,7 +41,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     align-items:stretch;
     min-height: 100vh;
     max-width: 1160px;
@@ -50,6 +50,7 @@ body {
 
 /* BLOC  HEADER */
 .header-section {
+    padding-top: 20px;
     width: 100%;
     background-color: #782221;
 }
@@ -67,9 +68,11 @@ body {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
 }
 
-/* JOB EN RECHERCHE */
+/* JOB EN RECHERCHE -Cas particulier du à la taille du  au 
+fait  que j'ai demander aux autres H2 d'avoir un fond rouge */
 .profile-info__job {
     background-color: #782221;
+    padding-bottom: 20px;
 }
 
 /* MA BARRES d'INFOS de CONTACTS */
@@ -82,11 +85,11 @@ body {
 }
 
 .contact-info__address {
-    margin-right: 160px; 
+    margin-right: 240px; 
 }
 
 .contact-info__phone {
-    margin-left: 160px; 
+    margin-left: 240px; 
 }
 
 /* Couleur par défaut des liens */
@@ -104,20 +107,39 @@ body {
     color: white;
 }
 
+/* BLOC GAUCHE - A propos, Langues Parlées, Centres d'interets */
 .left-section  {
     flex-basis: 30%;
     width: 30%;
     background-color: #782221;
-    padding-left: 20px;
-    padding-right: 17px;
+    padding-left: 0px;
+    padding-right: 40px;;
 }
 
+.left-section__title{
+    padding-left: 15px;
+}
+
+.left-section__description{
+    padding-left: 15px;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+/* BLOC DROIT - Experiences Pro, Diplomes,  Compétences*/
 .right-section {
     width: 65%;
-    flex-basis:65%;
-    padding-left: 20px;
+    flex-basis: 65%;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-right: 3px solid black;
 }
 
+.right-section__title{
+    padding-left: 15px;
+    margin-right: 10px;
+}
+/* PIED DE PAGE - ICONES RESEAUX SOCIAUX, date de MAJ, citation propriétaire icones */
 .footer-section {
     display: flex;
     flex-direction: column;
@@ -141,7 +163,3 @@ body {
     width: 100%;
     margin-top: 10px;
 }
-
-
-
-/* Aligner les liens en bas de page, mise en page du contenu texte, listes et titres etc */
