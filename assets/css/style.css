@@ -49,13 +49,13 @@ body {
 }
 
 /* BLOC  HEADER */
-.header-section {
+.header {
     padding-top: 20px;
     width: 100%;
     background-color: #782221;
 }
 
-.profile-info {
+.profile {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,18 +76,17 @@ fait  que j'ai demander aux autres H2 d'avoir un fond rouge */
 }
 
 /* MA BARRES d'INFOS de CONTACTS */
-.contact-info {
+.contact {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #2c1d27;
     padding: 15px;
+    font-style: italic;
 }
-
 .contact-info__address {
     margin-right: 240px; 
 }
-
 .contact-info__phone {
     margin-left: 240px; 
 }
@@ -95,20 +94,21 @@ fait  que j'ai demander aux autres H2 d'avoir un fond rouge */
 /* Couleur par défaut des liens */
 .contact-info__address a,
 .contact-info__email a,
-.contact-info__phone a {
+.contact-info__phone a,
+.made-by {
     color: white;
-    text-decoration: none;
 }
 
 /* Couleur des liens une fois visités */
 .contact-info__address a:visited,
 .contact-info__email a:visited,
-.contact-info__phone a:visited {
+.contact-info__phone a:visited,
+.made-by {
     color: white;
 }
 
 /* BLOC GAUCHE - A propos, Langues Parlées, Centres d'interets */
-.left-section  {
+.left {
     flex-basis: 30%;
     width: 30%;
     background-color: #782221;
@@ -116,6 +116,7 @@ fait  que j'ai demander aux autres H2 d'avoir un fond rouge */
     padding-right: 40px;;
 }
 
+/* Calibrage des Titre dans le Bloc GAUCHE */
 .left-section__title{
     padding-left: 15px;
 }
@@ -127,7 +128,7 @@ fait  que j'ai demander aux autres H2 d'avoir un fond rouge */
 }
 
 /* BLOC DROIT - Experiences Pro, Diplomes,  Compétences*/
-.right-section {
+.right {
     width: 65%;
     flex-basis: 65%;
     padding-left: 10px;
@@ -135,10 +136,19 @@ fait  que j'ai demander aux autres H2 d'avoir un fond rouge */
     border-right: 3px solid black;
 }
 
+/* Calibrage des Titre dans le Bloc DROIT */
 .right-section__title{
-    padding-left: 15px;
+    padding-left: 20px;
     margin-right: 10px;
 }
+
+/*  */
+.right-section__job,
+.right-section__degree-info {
+    padding-left: 15px;
+}
+
+
 /* PIED DE PAGE - ICONES RESEAUX SOCIAUX, date de MAJ, citation propriétaire icones */
 .footer-section {
     display: flex;
@@ -162,4 +172,44 @@ fait  que j'ai demander aux autres H2 d'avoir un fond rouge */
 .other {
     width: 100%;
     margin-top: 10px;
+}
+
+
+/* EFFETS */
+
+/* Bandeau Rouge au survol */
+.right-section__job:hover,
+.right-section__degree-info:hover,
+.right-section__skills-list li:hover {
+    border-right: 5px solid #782221; 
+}
+
+/* Indique que l'on peut zoomer au survol */
+.profile-info__photo:hover {
+    cursor: zoom-in; 
+}
+
+/* Au clic, ouvrez l'image en grand dans le navigateur */
+.profile-info__photo:active {
+    cursor: pointer;
+    transition: transform 0.3s;
+    transform: scale(2); 
+}
+
+/* Réduisez légèrement l'opacité au survol des icônes de réseaux sociaux */
+.social-icon-1:hover,
+.social-icon-2:hover,
+.social-icon-3:hover {
+    opacity: 0.8; 
+}
+
+/* Ajoutez une bordure à gauche des titres */
+.right-section__title{
+    border-left: 5px solid #782221;
+    padding-left: 10px;
+}
+
+/* Liens souligné au survol */
+a:hover {
+    text-decoration: underline;
 }

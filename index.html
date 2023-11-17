@@ -10,14 +10,16 @@
 <body>
 
     <!-- En-tête du CV avec la photo, le nom et le poste recherché -->
-    <header class="header-section">
-        <div class="profile-info">
-            <img src="./assets/images/photo-profil.png" alt="Photo de profil" class="profile-info__photo">
+    <header class="header">
+        <div class="profile">
+            <a href="./assets/images/photo-profil-grande.png" target="_blank">
+                <img src="./assets/images/photo-profil.png" alt="Photo de profil" class="profile-info__photo">
+            </a>            
             <h1 class="profile-info__name">KEVIN CASTAGNOS</h1>
             <h2 class="profile-info__job">Développeur Web Junior</h2>
         </div>
         <!-- Informations de contact : adresse, email, téléphone -->
-        <div class="contact-info">
+        <div class="contact">
             <p class="contact-info__address">
                 <a href="https://www.google.com/maps?q=12+Rue+des+Oliviers,+53200+La+Roche-Neuville" target="_blank">
                     12 Rue des Oliviers <br>
@@ -34,14 +36,13 @@
     </header>
 
     <!-- Bloc gauche du CV avec la présentation, les langues parlées, les centres d'intérêt -->
-    <section class="left-section">
+    <section class="left">
         <h2 class="left-section__title">A propos</h2>
         <p class="left-section__description">
             <!-- Texte de présentation à propos -->
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            At, et esse officia corrupti aspernatur nihil, distinctio
-            excepturi harum explicabo accusantium, delectus laborum dicta
-            ea assumenda ducimus dolores aliquam fuga eum?
+            Persévérant, Compétitif, Autonome, ancien Jeune Entrepreneur à l'écoute de ma clientèle. 
+            Je suis créatif pour trouver des solutions
+            tout en ayant à l'esprit de performer dans mon métier.
         </p>
         <h2 class="left-section__title">Langues parlées</h2>
         <ul class="left-section__language-list">
@@ -63,57 +64,63 @@
     </section>
 
     <!-- Bloc droit du CV avec les expériences professionnelles, les diplômes, les compétences -->
-    <section class="right-section">
+    <section class="right">
         <h2 class="right-section__title">Expériences professionnelles</h2>
         <div class="right-section__job">
-            <h3 class="job__name">Poste 1 - Entreprise 1</h3>
-            <p class="job__date">Du XXX au XXX</p>
+            <h3 class="job__name">Burton of London - Vendeur Conseil</h3>
+            <p class="job__date">De Septembre 2022 à Maintenant</p>
             <ul class="job__mission-list">
                 <!-- Liste des missions pour le poste 1 -->
-                <li class="job__mission-item">Mission 1</li>
-                <li class="job__mission-item">Mission 2</li>
-                <li class="job__mission-item">Mission 3</li>
+                <li class="job__mission-item">Ecoute Active & Conseil Client</li>
+                <li class="job__mission-item">Marketing & Merchandising</li>
+                <li class="job__mission-item">Analyses Performances</li>
             </ul>
         </div>
         <div class="right-section__job">
-            <h3 class="job__name">Poste 2 - Entreprise 2</h3>
-            <p class="job__date">Du XXX au XXX</p>
+            <h3 class="job__name">Trader Retail</h3>
+            <p class="job__date">De 2018 à 2021</p>
             <ul class="job__mission-list">
                 <!-- Liste des missions pour le poste 2 -->
-                <li class="job__mission-item">Mission 1</li>
-                <li class="job__mission-item">Mission 2</li>
-                <li class="job__mission-item">Mission 3</li>
+                <li class="job__mission-item">Intervenir sur les Marchés Financiers</li>
+                <li class="job__mission-item">Analyse comportemental et Stratégie d'intervention</li>
+                <li class="job__mission-item">Macro/Micro Economie</li>
             </ul>
         </div>
         <div class="right-section__job">
-            <h3 class="job__name">Poste 3 - Entreprise 3</h3>
-            <p class="job__date">Du XXX au XXX</p>
+            <h3 class="job__name">Auto-Entrepreneur Renovation</h3>
+            <p class="job__date">De 2014 à 2018</p>
             <ul class="job__mission-list">
                 <!-- Liste des missions pour le poste 3 -->
-                <li class="job__mission-item">Mission 1</li>
-                <li class="job__mission-item">Mission 2</li>
-                <li class="job__mission-item">Mission 3</li>
+                <li class="job__mission-item">Force de Proposition</li>
+                <li class="job__mission-item">Réalisation Devis & Planning</li>
+                <li class="job__mission-item">Methodologie</li>
             </ul>
         </div>
 
         <h2 class="right-section__title">Diplômes/Formation</h2>
         <div class="right-section__degree-info">
             <!-- Informations sur la formation 1 -->
-            <h3 class="degree__name">Diplôme/Formation n°1</h3>
-            <p class="degree__date">Du XXX au XXX</p>
-            <p class="degree__school">Nom Ecole</p>
+            <h3 class="degree__name">Titre professionnel (Niv 5) Develeppeur  Web et Web Mobile </h3>
+            <p class="degree__date">De 2023 à ....</p>
+            <p class="degree__school">Centre Européen Formation - E-Learning</p>
         </div>
         <div class="right-section__degree-info">
             <!-- Informations sur la formation 2 -->
-            <h3 class="degree__name">Diplôme/Formation n°2</h3>
-            <p class="degree__date">Du XXX au XXX</p>
-            <p class="degree__school">Nom Ecole</p>
+            <h3 class="degree__name">TItre professionnel (Niv 4) Vendeur Conseil </h3>
+            <p class="degree__date">De 2021 à 2022</p>
+            <p class="degree__school">MFR SAlignac</p>
         </div>
         <div class="right-section__degree-info">
             <!-- Informations sur la formation 3 -->
-            <h3 class="degree__name">Diplôme/Formation n°3</h3>
-            <p class="degree__date">Du XXX au XXX</p>
-            <p class="degree__school">Nom Ecole</p>
+            <h3 class="degree__name">Trading &  Analyste Graphique</h3>
+            <p class="degree__date">2018</p>
+            <p class="degree__school">ICT Finance</p>
+        </div>
+        <div class="right-section__degree-info">
+            <!-- Informations sur la formation 4 -->
+            <h3 class="degree__name">CAP Platrier Plaquiste</h3>
+            <p class="degree__date">De 2013 à 2014</p>
+            <p class="degree__school">CFA MONTAUBAN</p>
         </div>
 
         <h2 class="right-section__title">Compétences</h2>
@@ -128,15 +135,23 @@
 
     <!-- Pied de page avec les liens vers les réseaux sociaux et la date de dernière mise à jour -->
     <footer class="footer-section">
+        <!-- Liens Réseaux Sociaux -->
         <div class="my-media">
-            <img src="./assets/images/facebook.png" alt="page-facebook" class="social-icon-1">
-            <img src="./assets/images/instagram.png" alt="page-instagram" class="social-icon-2">
-            <img src="./assets/images/signe-github.png" alt="page-github" class="social-icon-3">
+            <a href="https://www.facebook.com/profile.php?id=100012203808596" target="_blank">
+                <img src="./assets/images/facebook.png" alt="page-facebook" class="social-icon-1">
+            </a>
+            <a href="https://www.instagram.com/gab_tokyod/?hl=fr" target="_blank">
+                <img src="./assets/images/instagram.png" alt="page-instagram" class="social-icon-2">
+            </a>
+            <a href="https://github.com/TokyoFrenchDev" target="_blank">
+                <img src="./assets/images/signe-github.png" alt="page-github" class="social-icon-3">
+            </a>
         </div>
-        <!-- Dernière mise à jour -->
-        <div class="other">        
-            <p class="other__last-update">Dernière mise à jour le 14 Novembre 2023</p>
-            <a href="https://www.flaticon.com/fr/icones-gratuites/cv" title="cv icônes">Cv icônes créées par Freepik - Flaticon</a>
+        <div class="other">   
+            <!-- Dernière mise à jour -->     
+            <p class="last-update">Dernière mise à jour le 14 Novembre 2023</p>
+            <!-- Citation Légal Créateur Icones -->
+            <a href="https://www.flaticon.com/fr/icones-gratuites/cv" title="cv icônes" class="made-by">Cv icônes créées par Freepik - Flaticon</a>
         </div>
     </footer>
 
